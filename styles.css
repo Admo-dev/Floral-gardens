@@ -110,9 +110,7 @@ section .media-icons {
 }
 
 section .media-icons a {
-  background-color: rgb(255, 109, 231);
   border: 2px solid rgb(83, 0, 81);
-  outline: 3px solid rgb(255, 165, 254);
   padding: 4px 4px;
   border-radius: 30px;
   transition: transform 0.3s;
@@ -120,7 +118,7 @@ section .media-icons a {
 
 section .media-icons i{
   font-size: 25px;
-  color: rgb(82, 0, 91);
+  color: rgb(255, 109, 231); ;
 }
 
 section .media-icons a:hover {

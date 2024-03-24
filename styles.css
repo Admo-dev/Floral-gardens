@@ -140,7 +140,7 @@ section .media-icons a:nth-child(2) {
 }
 
 section {
-  background-image: url(Floral-gardens/natures-beauty.jpg);
+  background-image: url(natures-beauty.jpg);
   min-height: 100vh;
   background-repeat: no-repeat;
   width: 100%;

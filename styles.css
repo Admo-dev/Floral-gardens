@@ -8,7 +8,8 @@
   color: black;
 }
 
-section .logo {
+
+.logo {
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 700;
@@ -16,7 +17,7 @@ section .logo {
   color: bisque;
 }
 
-section .navigation a {
+.navigation a {
   text-decoration: none;
   padding: 5px 20px;
   border-radius: 20px;
@@ -27,15 +28,15 @@ section .navigation a {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-section .navigation a:not(:last-child) {
+.navigation a:not(:last-child) {
   margin-right: 30px;
 }
 
-section .navigation a:hover {
+.navigation a:hover {
   background-color: rgba(255, 96, 23, 0.986);
 }
 
-section .header {
+.header {
   position: relative;
   display: flex;
   align-items: center;
@@ -44,7 +45,7 @@ section .header {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-section .content-heading {
+.content-heading {
   font-size:60px;
   line-height: 50px;
   font-weight: 800;
@@ -54,7 +55,7 @@ section .content-heading {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-section .content {
+.content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -67,12 +68,12 @@ section .content {
   background-color: rgba(76, 0, 91, 0.507);
 }
 
-section .content-heading span {
+.content-heading span {
   color: rgba(255, 255, 255, 0.829);
   font-weight: 600;
 }
 
-section .content p {
+.content p {
   font-size: 20px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
@@ -81,7 +82,7 @@ section .content p {
   color: rgb(255, 244, 219);
 }
 
-section .content button {
+.content button {
   background-color: rgba(255, 96, 23, 0.986);
   border: none;
   padding: 10px 20px;
@@ -95,48 +96,48 @@ section .content button {
   transition: background-color 0.3s, color 0.3s, padding 0.3s, margin-left 0.3s;
 }
 
-section .content button:hover {
+.content button:hover {
   background-color: rgb(255, 255, 255);
   color: rgba(255, 96, 23, 0.986);
   padding: 10px 25px;
   margin-left: -5px;
 }
 
-section .media-icons {
+.media-icons {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-section .media-icons a {
+.media-icons a {
   padding: 4px 4px;
   border-radius: 30px;
   transition: transform 0.3s;
 }
 
-section .media-icons i{
+.media-icons i{
   font-size: 25px;
   color: rgb(255, 109, 231);
 }
 
-section .media-icons a:hover {
+.media-icons a:hover {
   transform: scale(1.2);
 }
 
-section .media-icons a:not(:last-child) {
+.media-icons a:not(:last-child) {
   margin-right: 60px;
 }
 
-section .media-icons a:first-child {
+.media-icons a:first-child {
   padding: 3px 8px;
 }
 
-section .media-icons a:nth-child(2) {
+.media-icons a:nth-child(2) {
   padding: 4px 6px;
 }
 
-section {
+body {
   background-image: url(natures-beauty.jpg);
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -145,6 +146,7 @@ section {
   flex-direction: column;
   background-position: center;
   background-size: cover;
+  backdrop-filter: blur(5px);
 }
 
 label i {
@@ -170,7 +172,7 @@ section .back-drop {
   min-height: 100vh;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 720px) {
 
   .header label {
     display: block;
@@ -178,9 +180,10 @@ section .back-drop {
 
   .header .menu-btn {
     position: absolute;
+    top: 50%;
   }
   
-  section .navigation {
+  .navigation {
     display: none;
   }
 
@@ -195,7 +198,8 @@ section .back-drop {
   #check:checked ~ .header .close-btn {
     display: block;
     z-index: 3;
-    position: fixed;
+    position: absolute;
+    top: 50%;
   }
 
   #check:checked ~ .header .navigation {
